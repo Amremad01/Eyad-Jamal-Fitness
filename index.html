@@ -3,89 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eyad Jamal Fitness - Transform Your Body, Transform Your Life</title>
+    <title>To-Do List Application</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <h1>Eyad Jamal Fitness</h1>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="plans.html">Plans</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>📝 My To-Do List</h1>
+            <p class="subtitle">Stay organized and productive</p>
+        </header>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <div class="input-wrapper">
+                <input 
+                    type="text" 
+                    id="todoInput" 
+                    class="todo-input" 
+                    placeholder="Add a new task..."
+                    autocomplete="off"
+                >
+                <button id="addBtn" class="add-btn">Add Task</button>
+            </div>
+            <div class="quick-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
             </div>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h2>Transform Your Body, Transform Your Life</h2>
-                <p>Join thousands of people who've achieved their fitness goals with Eyad Jamal's expert coaching and personalized training plans.</p>
-                <div class="hero-buttons">
-                    <a href="plans.html" class="btn btn-primary">Choose Your Plan</a>
-                    <a href="contact.html" class="btn btn-secondary">Get Started</a>
-                </div>
+        <!-- Stats Section -->
+        <div class="stats-section">
+            <div class="stat">
+                <span class="stat-label">Total Tasks</span>
+                <span class="stat-value" id="totalCount">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Active</span>
+                <span class="stat-value" id="activeCount">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Completed</span>
+                <span class="stat-value" id="completedCount">0</span>
             </div>
         </div>
-    </section>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <h2>Why Choose Us?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">💪</div>
-                    <h3>Expert Coaching</h3>
-                    <p>Work with certified fitness professionals with years of experience in helping clients reach their goals.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Personalized Plans</h3>
-                    <p>Every plan is tailored to your specific goals, fitness level, and lifestyle.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>24/7 Support</h3>
-                    <p>Access your workouts and nutrition guidance anytime, anywhere from your phone or computer.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Proven Results</h3>
-                    <p>Join thousands of satisfied clients who've achieved their fitness goals with our programs.</p>
+        <!-- Todo List -->
+        <section class="todos-section">
+            <div id="todoList" class="todo-list">
+                <div class="empty-state">
+                    <p>✨ No tasks yet. Add one to get started!</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to Transform?</h2>
-            <p>Start your fitness journey today with one of our tailored plans</p>
-            <a href="plans.html" class="btn btn-primary">View All Plans</a>
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button id="clearCompletedBtn" class="action-btn danger-btn">Clear Completed</button>
+            <button id="clearAllBtn" class="action-btn danger-btn">Clear All</button>
+            <button id="exportBtn" class="action-btn export-btn">Export Tasks</button>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Eyad Jamal Fitness. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Contact Us</a>
-            </div>
-        </div>
-    </footer>
+    <script src="app.js"></script>
 </body>
 </html>
