@@ -3,162 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List App - Task Manager with Local Storage</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        
-        .container {
-            background: white;
-            border-radius: 20px;
-            padding: 60px 40px;
-            max-width: 600px;
-            width: 100%;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            text-align: center;
-            animation: slideUp 0.6s ease;
-        }
-        
-        h1 {
-            color: #111827;
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-        }
-        
-        .subtitle {
-            color: #6b7280;
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            font-weight: 300;
-        }
-        
-        .features {
-            background: #f3f4f6;
-            padding: 25px;
-            border-radius: 12px;
-            margin: 30px 0;
-            text-align: left;
-        }
-        
-        .features h3 {
-            color: #111827;
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
-        
-        .features ul {
-            list-style: none;
-        }
-        
-        .features li {
-            color: #374151;
-            padding: 8px 0;
-            padding-left: 30px;
-            position: relative;
-        }
-        
-        .features li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #10b981;
-            font-weight: bold;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            padding: 16px 50px;
-            background: linear-gradient(135deg, #4f46e5, #4338ca);
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
-            border: none;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 35px rgba(79, 70, 229, 0.4);
-        }
-        
-        .app-link {
-            display: inline-block;
-            margin-top: 15px;
-        }
-        
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        @media (max-width: 600px) {
-            .container {
-                padding: 40px 20px;
-            }
-            
-            h1 {
-                font-size: 1.8rem;
-            }
-            
-            .subtitle {
-                font-size: 1rem;
-            }
-            
-            .cta-button {
-                display: block;
-                width: 100%;
-            }
-        }
-    </style>
+    <title>Eyad Jamal Fitness - Transform Your Body, Transform Your Life</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>📝 To-Do List App</h1>
-        <p class="subtitle">A smart task manager that saves everything locally</p>
-        
-        <div class="features">
-            <h3>✨ Features</h3>
-            <ul>
-                <li>Add, edit, and delete tasks instantly</li>
-                <li>Mark tasks as complete with one click</li>
-                <li>Filter tasks by status (All, Active, Completed)</li>
-                <li>Real-time statistics dashboard</li>
-                <li>Automatic local storage saving</li>
-                <li>Export tasks as JSON file</li>
-                <li>Beautiful, responsive design</li>
-                <li>Works on desktop, tablet, and mobile</li>
-            </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <h1>Eyad Jamal Fitness</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="plans.html">Plans</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        
-        <a href="todo/index.html" class="cta-button">🚀 Open To-Do App</a>
-        
-        <p style="color: #6b7280; margin-top: 25px; font-size: 0.95rem;">
-            All your tasks are saved automatically in your browser. No account needed!
-        </p>
-    </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Transform Your Body, Transform Your Life</h2>
+                <p>Join thousands of people who've achieved their fitness goals with Eyad Jamal's expert coaching and personalized training plans.</p>
+                <div class="hero-buttons">
+                    <a href="plans.html" class="btn btn-primary">Choose Your Plan</a>
+                    <a href="contact.html" class="btn btn-secondary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💪</div>
+                    <h3>Expert Coaching</h3>
+                    <p>Work with certified fitness professionals with years of experience in helping clients reach their goals.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Personalized Plans</h3>
+                    <p>Every plan is tailored to your specific goals, fitness level, and lifestyle.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>24/7 Support</h3>
+                    <p>Access your workouts and nutrition guidance anytime, anywhere from your phone or computer.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Proven Results</h3>
+                    <p>Join thousands of satisfied clients who've achieved their fitness goals with our programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform?</h2>
+            <p>Start your fitness journey today with one of our tailored plans</p>
+            <a href="plans.html" class="btn btn-primary">View All Plans</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Eyad Jamal Fitness. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
