@@ -34,14 +34,14 @@ A modern, feature-rich to-do list application with local storage functionality. 
 
 ## 🚀 Getting Started
 
-### View Online
-Access the app directly from GitHub Pages:
-**https://Amremad01.github.io/Eyad-Jamal-Fitness/todo-app/**
+### Access Online
+Visit the live application:
+**https://Amremad01.github.io/Eyad-Jamal-Fitness/**
 
 ### Local Setup
 1. Clone the repository
-2. Navigate to the todo-app folder
-3. Open `index.html` in your web browser
+2. Open `index.html` in your web browser
+3. Start adding tasks!
 
 ## 📝 How to Use
 
@@ -94,7 +94,7 @@ The application automatically saves all tasks to your browser's local storage. T
 - Safari 11+
 - Mobile browsers (iOS Safari, Chrome Mobile)
 
-## 🔐 Security
+## 🔒 Security
 
 - All data stored locally on your device
 - No data sent to external servers
